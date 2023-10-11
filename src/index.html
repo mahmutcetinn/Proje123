@@ -3,25 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>   
+    <title>Title</title>
     <link rel="stylesheet" href="./scss/main.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <defs>
+        <symbol id="icon-menu" viewBox="0 0 20 20">
+          <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
+        </symbol>
+      </defs>
+    </svg>
+
     <header class="Header">
       <div class="container">
         <a class="Header-logo" href="">
-          <img src="img/site-logo.png" alt="">
+          <img src="img/site-logo.png" alt="" />
         </a>
+
         <div class="Header-menu">
           <div class="Header-menu-user">
             <a href="">Register</a>
             <a href="">Sign In</a>
           </div>
-  
-          <a href="">List your property</a>
+          <button class="Header-menu-switch" type="button">
+            <svg class="icon icon-menu">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
+          <a class="button" href="">List your property</a>
           <div class="Header-menu-helper">
             <select name="">
               <option value="en">EN</option>

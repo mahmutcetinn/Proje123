@@ -2,7 +2,7 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
     <link rel="stylesheet" href="./scss/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,13 +27,14 @@
       </defs>
     </svg>
 
+    
     <header class="Header">
       <div class="container">
         <a class="Header-logo" href="">
           <img src="img/site-logo.png" alt="" />
         </a>
 
-        <button class="Header-menu-switch" type="button">
+        <button class="Header-switch button button-icon" type="button">
           <svg class="icon icon-menu">
             <use xlink:href="#icon-menu"></use>
           </svg>
@@ -45,7 +46,7 @@
             <a href="">Sign In</a>
           </div>
 
-          <a class="button" href="">List your property</a>
+          <a class="Header-menu-property button button-blue" href="">List your property</a>
           <div class="Header-menu-helper">
             <select name="">
               <option value="en">EN</option>
@@ -57,5 +58,15 @@
         </div>
       </div>
     </header>
+    <nav class="Navigation">
+      <div class="container">
+        <a href="">Menu 1</a>
+        <a href="">Menu 2</a>
+        <a href="">Menu 3</a>
+        <a href="">Menu 4</a>
+      </div>
+    </nav>
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

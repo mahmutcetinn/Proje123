@@ -1,13 +1,15 @@
 @import "helper/normalize-mahmut.css";
-// yeni
 @import "helper/formalize.css";
 
 
 @import "config/veriable.scss";
+@import "config/mixin.scss";
 @import "helper/global.scss";
 
 
 @import "global/header.scss";
+
+@import "global/navigation.scss";
 
 
 

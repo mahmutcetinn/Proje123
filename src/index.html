@@ -2,7 +2,10 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Title</title>
     <link rel="stylesheet" href="./scss/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,9 +15,9 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <svg
-      aria-hidden="true"
       style="position: absolute; width: 0; height: 0; overflow: hidden"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -24,12 +27,20 @@
         <symbol id="icon-menu" viewBox="0 0 20 20">
           <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
         </symbol>
+        <symbol id="icon-pin_drop" viewBox="0 0 24 24">
+          <path d="M5.016 20.016h13.969v1.969h-13.969v-1.969zM9.984 8.016q0 0.844 0.586 1.406t1.43 0.563 1.43-0.563 0.586-1.406q0-0.797-0.609-1.406t-1.406-0.609-1.406 0.609-0.609 1.406zM18 8.016q0 2.016-1.5 4.758t-3 4.477l-1.5 1.734q-0.656-0.703-1.664-1.922t-2.672-4.125-1.664-4.922q0-2.484 1.758-4.242t4.242-1.758 4.242 1.758 1.758 4.242z"></path>
+        </symbol>
+        <symbol id="icon-person" viewBox="0 0 24 24">
+          <path d="M12 14.016q2.531 0 5.273 1.102t2.742 2.883v2.016h-16.031v-2.016q0-1.781 2.742-2.883t5.273-1.102zM12 12q-1.641 0-2.813-1.172t-1.172-2.813 1.172-2.836 2.813-1.195 2.813 1.195 1.172 2.836-1.172 2.813-2.813 1.172z"></path>
+        </symbol>
+        <symbol id="icon-date_range" viewBox="0 0 24 24">
+          <path d="M18.984 20.016v-11.016h-13.969v11.016h13.969zM18.984 3.984q0.797 0 1.406 0.609t0.609 1.406v14.016q0 0.797-0.609 1.383t-1.406 0.586h-13.969q-0.844 0-1.43-0.563t-0.586-1.406v-14.016q0-0.797 0.586-1.406t1.43-0.609h0.984v-1.969h2.016v1.969h7.969v-1.969h2.016v1.969h0.984zM17.016 11.016v1.969h-2.016v-1.969h2.016zM12.984 11.016v1.969h-1.969v-1.969h1.969zM9 11.016v1.969h-2.016v-1.969h2.016z"></path>
+        </symbol>
       </defs>
     </svg>
 
-    
     <header class="Header">
-      <div class="container">
+      <section class="container">
         <a class="Header-logo" href="">
           <img src="img/site-logo.png" alt="" />
         </a>
@@ -46,7 +57,9 @@
             <a href="">Sign In</a>
           </div>
 
-          <a class="Header-menu-property button button-blue" href="">List your property</a>
+          <a class="Header-menu-property button button-blue" href=""
+            >List your property</a
+          >
           <div class="Header-menu-helper">
             <select name="">
               <option value="en">EN</option>
@@ -58,14 +71,72 @@
         </div>
       </div>
     </header>
+
     <nav class="Navigation">
       <div class="container">
-        <a href="">Menu 1</a>
-        <a href="">Menu 2</a>
-        <a href="">Menu 3</a>
-        <a href="">Menu 4</a>
+        <a class="Navigation-item" href="">Menu1</a>
+        <a class="Navigation-item" href="">Menu2</a>
+        <a class="Navigation-item" href="">Menu3</a>
+        <a class="Navigation-item" href="">Menu4</a>
       </div>
     </nav>
+
+    <main class="Main">
+      <section class="Showcase">
+        <div class="container">
+          <h1>More deals than days a year</h1>
+          <h3>From cosy country homes to funky city flats</h3>
+
+          <div class="Search">
+            <form class="Search-form" action="">
+
+              <div>
+                <div class="form-item">
+                  <svg class="icon icon-pin_drop">
+                    <use xlink:href="#icon-pin_drop"></use>
+                  </svg>
+                <input class="text" type="text">                   
+                </div>
+                <small>Destination, property name or address</small>                             
+              </div>
+
+              <div>
+                <div class="form-item">
+                  <svg class="icon icon-date_range">
+                    <use xlink:href="#icon-date_range"></use>
+                  </svg>
+                  <input class="text" type="date">     
+                </div>
+                <small>When</small>           
+              </div>
+
+              <div>
+                <div class="form-item">
+                  <svg class="icon icon-person">
+                    <use xlink:href="#icon-person"></use>
+                  </svg>
+                  <select class="select">
+                    <option value="">123</option>
+                  </select>     
+                </div>           
+              </div>
+
+              <div>
+                <button type="button">
+                  Let's get started
+                </button>
+              </div>
+              
+              <div class="asd">
+                Are you travelling for work?
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="js/index.js"></script>
     <script src="js/main.js"></script>
   </body>

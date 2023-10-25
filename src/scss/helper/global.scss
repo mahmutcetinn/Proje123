@@ -23,6 +23,14 @@ a {
   fill: currentColor;
 }
 
+.select, .button, .text {
+  font-family: inherit;
+  border-radius: $border-radius;
+  border: 0;
+  font-weight: bold;
+  background-color: #fff;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -30,9 +38,7 @@ a {
   padding-right: 20px;
   height: $finger-size;
   color: white;
-  font-weight: bold;
   background-color: transparent;
-  border-radius: $border-radius;
 
   &-icon {
     justify-content: center;
@@ -45,5 +51,40 @@ a {
   &-blue {
     color: white;
     background-color: $color-blue;
+  }
+}
+
+.text {
+  min-height: $finger-size;
+  border-radius: $border-radius;
+  color: $color-navy;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.select {
+  display: inline-block;
+  width: 100%;
+  color: $color-navy;
+  height: $finger-size;
+}
+
+.form-item {
+  position: relative;
+  .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-navy;
+  }
+
+  .text {
+    padding-left: 40px;
+  }
+
+  .select {
+    padding-left: 40px;
   }
 }
